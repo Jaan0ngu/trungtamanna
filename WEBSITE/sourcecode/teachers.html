@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đội ngũ Giảng viên - ANNA English Center</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-800 antialiased overflow-x-hidden bg-white flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-700 tracking-tight flex items-center">
+                <i class="fa-solid fa-graduation-cap text-3xl mr-2"></i> ANNA
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="about.html" class="hover:text-blue-600 transition">Về chúng tôi</a>
+                <a href="teachers.html" class="text-blue-600 transition border-b-2 border-blue-600 pb-1">Giảng viên</a>
+                <a href="courses.html" class="hover:text-blue-600 transition">Khóa học</a>
+                <a href="roadmap.html" class="hover:text-blue-600 transition">Lộ trình</a>
+            </nav>
+            
+            <a href="register.html" class="hidden md:inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition transform hover:scale-105 shadow-lg">
+                Tư vấn miễn phí
+            </a>
+
+            <button class="md:hidden text-2xl text-blue-600" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24">
+        
+        <section class="py-16 md:py-20 bg-blue-50 relative">
+            <div class="container mx-auto px-4 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">Đội ngũ Chuyên gia tại ANNA</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Hơn cả một người thầy, chúng tôi là những người truyền lửa. 100% đội ngũ giảng viên tại ANNA sở hữu chứng chỉ IELTS 7.5+ và nghiệp vụ sư phạm chuẩn quốc tế (TESOL/CELTA).
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4 lg:px-8 max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ms. Anna" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-blue-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white text-blue-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white text-blue-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-2xl font-bold text-blue-900 mb-1">Ms. Anna Nguyễn</h3>
+                            <p class="text-blue-600 font-bold mb-4">Giám đốc Học thuật | IELTS 8.5</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">Cựu du học sinh Thạc sĩ tại Anh Quốc. Với hơn 8 năm kinh nghiệm luyện thi IELTS thực chiến, cô đã giúp hàng ngàn học viên vượt mục tiêu band 7.0+.</p>
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold border border-blue-100">Reading 9.0</span>
+                                <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold border border-blue-100">Listening 9.0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mr. John" class="w-full h-80 object-cover object-top transform group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-blue-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white text-blue-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white text-blue-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-2xl font-bold text-blue-900 mb-1">Mr. John Smith</h3>
+                            <p class="text-blue-600 font-bold mb-4">Chuyên gia Giao tiếp | CELTA</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">Giáo viên bản ngữ với chứng chỉ giảng dạy quốc tế CELTA. Thầy nổi tiếng với những tiết học Speaking năng động, giúp học viên gỡ bỏ rào cản tự ti.</p>
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold border border-blue-100">Speaking Expert</span>
+                                <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold border border-blue-100">Pronunciation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 group hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ms. Sarah" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-blue-900 bg-opacity-70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white text-blue-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-white text-blue-900 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-2xl font-bold text-blue-900 mb-1">Ms. Sarah Trần</h3>
+                            <p class="text-blue-600 font-bold mb-4">Giảng viên IELTS | IELTS 8.0</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">Thạc sĩ Ngôn ngữ học ứng dụng. Được học viên mệnh danh là "Phù thủy Writing" với các phương pháp tư duy logic, đơn giản hóa các bài luận phức tạp.</p>
+                            <div class="flex flex-wrap justify-center gap-2">
+                                <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold border border-blue-100">Writing 8.0</span>
+                                <span class="bg-blue-50 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold border border-blue-100">TESOL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-blue-900 text-white">
+            <div class="container mx-auto px-4 lg:px-8 max-w-5xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-yellow-400 mb-4">Quy trình tuyển chọn khắt khe</h2>
+                    <p class="text-blue-100">Chỉ 10% ứng viên vượt qua vòng tuyển dụng để chính thức đứng lớp tại ANNA.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-blue-800 p-8 rounded-2xl border border-blue-700">
+                        <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
+                            <i class="fa-solid fa-file-contract text-2xl text-yellow-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Sàng lọc hồ sơ</h4>
+                        <p class="text-sm text-blue-200">Bắt buộc sở hữu chứng chỉ IELTS 7.5+ (không kỹ năng nào dưới 7.0) và nghiệp vụ sư phạm.</p>
+                    </div>
+                    <div class="bg-blue-800 p-8 rounded-2xl border border-blue-700">
+                        <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
+                            <i class="fa-solid fa-person-chalkboard text-2xl text-yellow-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Giảng dạy Demo</h4>
+                        <p class="text-sm text-blue-200">Trải qua 2 vòng dạy thử dưới sự đánh giá trực tiếp của Giám đốc Học thuật và hội đồng chuyên môn.</p>
+                    </div>
+                    <div class="bg-blue-800 p-8 rounded-2xl border border-blue-700">
+                        <div class="w-16 h-16 bg-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner">
+                            <i class="fa-solid fa-medal text-2xl text-yellow-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Đào tạo & Đánh giá</h4>
+                        <p class="text-sm text-blue-200">Liên tục được training phương pháp mới hàng tháng và đánh giá dựa trên điểm số thực tế của học viên.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Bạn đã sẵn sàng học cùng chuyên gia?</h2>
+                <a href="register.html" class="inline-block bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition shadow-[0_4px_14px_0_rgba(220,38,38,0.39)] hover:shadow-[0_6px_20px_rgba(220,38,38,0.23)] hover:-translate-y-1 transform">
+                    Đăng ký Test trình độ ngay
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-950 text-gray-300 py-12 border-t-4 border-blue-600">
+        <div class="container mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <a href="index.html" class="text-2xl font-bold text-white tracking-tight flex items-center mb-6">
+                    <i class="fa-solid fa-graduation-cap text-3xl mr-2 text-blue-500"></i> ANNA
+                </a>
+                <p class="text-sm mb-4">Hệ thống trung tâm Anh ngữ hàng đầu với sứ mệnh giúp 1 triệu người Việt đạt chuẩn tiếng Anh quốc tế.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-600 transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-600 transition text-white"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center hover:bg-blue-600 transition text-white"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Liên kết nhanh</h4>
+                <ul class="space-y-3">
+                    <li><a href="about.html" class="hover:text-blue-400 transition">Về chúng tôi</a></li>
+                    <li><a href="courses.html" class="hover:text-blue-400 transition">Khóa học IELTS</a></li>
+                    <li><a href="teachers.html" class="hover:text-blue-400 transition">Đội ngũ giáo viên</a></li>
+                    <li><a href="library.html" class="hover:text-blue-400 transition">Thư viện tài liệu</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Thông liên hệ</h4>
+                <ul class="space-y-3">
+                    <li class="flex items-start"><i class="fa-solid fa-phone mt-1 mr-3 text-blue-500"></i> Hotline: 1900 xxxx</li>
+                    <li class="flex items-start"><i class="fa-solid fa-envelope mt-1 mr-3 text-blue-500"></i> info@annaenglish.edu.vn</li>
+                    <li class="flex items-start"><i class="fa-solid fa-clock mt-1 mr-3 text-blue-500"></i> 08:00 - 21:00 (Thứ 2 - CN)</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Hệ thống cơ sở</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><strong class="text-white">Hà Nội:</strong> 123 Cầu Giấy, Q. Cầu Giấy</li>
+                    <li><strong class="text-white">TP.HCM:</strong> 456 Sư Vạn Hạnh, Q. 10</li>
+                    <li><strong class="text-white">Đà Nẵng:</strong> 789 Nguyễn Văn Linh, Hải Châu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-12 pt-8 border-t border-blue-900 text-center text-sm">
+            <p>&copy; 2026 ANNA English Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const nav = document.querySelector('nav');
+
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('shadow-md');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('space-y-4');
+            nav.classList.remove('space-x-8');
+        });
+    </script>
+</body>
+</html>

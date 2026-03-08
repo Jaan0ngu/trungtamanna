@@ -1,0 +1,138 @@
+/* ==========================================================================
+   CÀI ĐẶT CƠ BẢN (BASE)
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tùy chỉnh màu highlight khi bôi đen văn bản */
+::selection {
+    background-color: #2563eb; /* blue-600 */
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   TÙY CHỈNH THANH CUỘN (CUSTOM SCROLLBAR)
+   ========================================================================== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9; /* slate-100 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #93c5fd; /* blue-300 */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6; /* blue-500 */
+}
+
+/* ==========================================================================
+   CẤU HÌNH TIMELINE (LỘ TRÌNH HỌC)
+   ========================================================================== */
+.timeline-item {
+    transition: all 0.3s ease;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #2563eb; 
+    border: 3px solid white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+}
+
+/* Hiệu ứng Glow và Scale khi di chuột vào từng chặng lộ trình */
+.timeline-item:hover::before {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.8);
+    background-color: #facc15; /* yellow-400 */
+    border-color: #1e3a8a; /* blue-900 */
+}
+
+.timeline-item:hover h3 {
+    color: #2563eb; /* Đổi màu tiêu đề khi hover */
+    transition: color 0.3s ease;
+}
+
+/* ==========================================================================
+   CÁC HIỆU ỨNG ANIMATION (DÙNG ĐỂ GẮN CLASS VÀO HTML)
+   ========================================================================== */
+
+/* 1. Hiệu ứng Nổi nhẹ (Floating) - Rất hợp cho ảnh Hero hoặc Icon */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* 2. Hiệu ứng Tia sáng lướt qua (Shine) - Dùng cho nút Đăng ký / Call to Action */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+}
+
+/* 3. Hiệu ứng Tỏa sóng (Pulse Glow) - Dùng cho nút Hotline hoặc nút Khuyến mãi */
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.6); } /* red-600 */
+    70% { box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+.btn-pulse {
+    animation: pulse-glow 2s infinite;
+}
+
+/* 4. Hiệu ứng trượt lên (Fade In Up) - Dùng cho content khi load trang */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}

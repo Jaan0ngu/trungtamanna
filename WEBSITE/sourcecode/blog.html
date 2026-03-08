@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Kinh Nghiệm Học Tập - ANNA English Center</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-800 antialiased overflow-x-hidden bg-gray-50 flex flex-col min-h-screen">
+
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-700 tracking-tight flex items-center">
+                <i class="fa-solid fa-graduation-cap text-3xl mr-2"></i> ANNA
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="about.html" class="hover:text-blue-600 transition">Về chúng tôi</a>
+                <a href="teachers.html" class="hover:text-blue-600 transition">Giảng viên</a>
+                <a href="courses.html" class="hover:text-blue-600 transition">Khóa học</a>
+                <a href="roadmap.html" class="hover:text-blue-600 transition">Lộ trình</a>
+                <a href="blog.html" class="text-blue-600 transition border-b-2 border-blue-600 pb-1">Blog</a>
+            </nav>
+            
+            <a href="register.html" class="hidden md:inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition transform hover:scale-105 shadow-lg">
+                Tư vấn miễn phí
+            </a>
+
+            <button class="md:hidden text-2xl text-blue-600" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24">
+        
+        <section class="bg-blue-900 text-white py-12">
+            <div class="container mx-auto px-4 lg:px-8 text-center">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 text-yellow-400">Góc Chia Sẻ ANNA</h1>
+                <p class="text-blue-100 text-lg">Cập nhật tin tức, tài liệu và kinh nghiệm luyện thi IELTS mỗi ngày.</p>
+            </div>
+        </section>
+
+        <section class="py-12">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden flex flex-col md:flex-row group hover:shadow-2xl transition duration-300 cursor-pointer">
+                    <div class="md:w-1/2 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="IELTS Tips" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-sm font-bold text-red-600 bg-red-100 px-3 py-1 rounded-full w-max mb-4">Mới nhất</span>
+                        <h2 class="text-3xl font-bold text-blue-900 mb-4 group-hover:text-blue-600 transition">Lộ trình tự học IELTS từ 0 đến 6.5 cho người mất gốc năm 2026</h2>
+                        <p class="text-gray-600 mb-6 line-clamp-3 leading-relaxed">Bạn đang hoang mang không biết bắt đầu học IELTS từ đâu? Bài viết này sẽ vạch ra cho bạn một lộ trình chi tiết từng tháng, các tài liệu cần thiết và phương pháp học hiệu quả nhất để tiết kiệm thời gian và chi phí.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-6">
+                            <span class="mr-4"><i class="fa-solid fa-calendar-days mr-2 text-blue-500"></i> 10/10/2026</span>
+                            <span><i class="fa-solid fa-user-pen mr-2 text-blue-500"></i> Ms. Anna</span>
+                        </div>
+                        <a href="#" class="inline-block text-blue-600 font-bold hover:text-blue-800 transition">Đọc tiếp <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-20">
+            <div class="container mx-auto px-4 lg:px-8">
+                <div class="flex justify-between items-center mb-8 border-b-2 border-gray-100 pb-4">
+                    <h2 class="text-2xl font-bold text-blue-900">Bài viết mới cập nhật</h2>
+                    <div class="hidden md:flex space-x-4 text-sm font-semibold">
+                        <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-1">Tất cả</a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition">Kinh nghiệm thi</a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition">Từ vựng & Ngữ pháp</a>
+                        <a href="#" class="text-gray-500 hover:text-blue-600 transition">Sự kiện</a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden group hover:-translate-y-1 hover:shadow-xl transition duration-300 flex flex-col">
+                        <div class="overflow-hidden h-52 relative">
+                            <img src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vocabulary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                            <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Từ vựng</span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition">Tổng hợp 500 từ vựng Academic thông dụng nhất trong IELTS Reading</h3>
+                                <p class="text-gray-600 text-sm mb-4 line-clamp-3">Nắm trọn bộ từ vựng này, bạn sẽ tự tin đối phó với mọi chủ đề khó nhằn trong bài thi Reading như Khoa học, Lịch sử, Môi trường...</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-xs text-gray-500"><i class="fa-regular fa-clock mr-1"></i> 5 phút đọc</span>
+                                <a href="#" class="text-sm font-bold text-blue-600 hover:underline">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden group hover:-translate-y-1 hover:shadow-xl transition duration-300 flex flex-col">
+                        <div class="overflow-hidden h-52 relative">
+                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Speaking" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                            <span class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Kinh nghiệm</span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition">Bí kíp "Kéo dài" câu trả lời trong IELTS Speaking Part 1 không bị gượng</h3>
+                                <p class="text-gray-600 text-sm mb-4 line-clamp-3">Áp dụng ngay công thức AREA để câu trả lời của bạn luôn đủ ý, tự nhiên và ghi điểm tuyệt đối trong mắt giám khảo.</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-xs text-gray-500"><i class="fa-regular fa-clock mr-1"></i> 3 phút đọc</span>
+                                <a href="#" class="text-sm font-bold text-blue-600 hover:underline">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden group hover:-translate-y-1 hover:shadow-xl transition duration-300 flex flex-col">
+                        <div class="overflow-hidden h-52 relative">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Event" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                            <span class="absolute top-4 left-4 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">Sự kiện</span>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-blue-900 mb-3 group-hover:text-blue-600 transition">Workshop: Giải mã bộ đề IELTS Cambridge 19 cùng Cựu giám khảo</h3>
+                                <p class="text-gray-600 text-sm mb-4 line-clamp-3">Đăng ký tham gia ngay sự kiện lớn nhất tháng này để được phân tích xu hướng ra đề mới nhất và nhận tài liệu độc quyền.</p>
+                            </div>
+                            <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-100">
+                                <span class="text-xs text-gray-500"><i class="fa-regular fa-calendar mr-1"></i> Sắp diễn ra</span>
+                                <a href="#" class="text-sm font-bold text-blue-600 hover:underline">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-center mt-12">
+                    <nav class="inline-flex rounded-md shadow-sm" aria-label="Pagination">
+                        <a href="#" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="#" aria-current="page" class="z-10 bg-blue-50 border-blue-500 text-blue-600 relative inline-flex items-center px-4 py-2 border text-sm font-bold">
+                            1
+                        </a>
+                        <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                            2
+                        </a>
+                        <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex items-center px-4 py-2 border text-sm font-medium">
+                            3
+                        </a>
+                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                            ...
+                        </span>
+                        <a href="#" class="relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </nav>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-950 text-gray-300 py-12 border-t-4 border-blue-600">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2026 ANNA English Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('hidden'); nav.classList.toggle('flex'); nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute'); nav.classList.toggle('top-16'); nav.classList.toggle('left-0');
+            nav.classList.toggle('w-full'); nav.classList.toggle('bg-white'); nav.classList.toggle('shadow-md');
+            nav.classList.toggle('p-4'); nav.classList.toggle('space-y-4'); nav.classList.remove('space-x-8');
+        });
+    </script>
+</body>
+</html>
