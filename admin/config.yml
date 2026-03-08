@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main # Hoặc 'master' tùy thuộc vào tên nhánh chính trên GitHub của bạn
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Quản lý Bài viết SEO"
+    folder: "blog"
+    create: true
+    fields:
+      - {label: "Tiêu đề SEO (Title)", name: "title", widget: "string"}
+      - {label: "Nội dung bài viết", name: "body", widget: "markdown"}
